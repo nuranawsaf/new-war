@@ -5,11 +5,19 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-primary: #d1b06b;
+  --color-secondary: #1f2732;
+  --color-tertiary: #2e3947;
+  --color-theme-black: #161d27;
+  --color-theme-lightBlack: #2e3642;
+  --color-lightGray: #d7d7d7;
+  --color-theme-gray: #919191;
+  --color-darkWhite: #fbfbfb;
+
+  --font-outfit: "Outfit", sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-luxurious: "Luxurious Script", cursive;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +30,136 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-outfit);
 }
+
+h1 {
+  @apply text-[2.25rem] lg:text-[4.07rem] lg:leading-[4.625rem];
+}
+h2 {
+  @apply text-[2.25rem] leading-[114.6%] lg:text-[4.07rem];
+}
+h3 {
+  @apply text-[2.25rem] leading-[114.6%] lg:text-[2.81rem];
+}
+h4 {
+  @apply text-[2.5rem] leading-[114.6%];
+}
+
+p {
+  @apply text-base leading-[140%] lg:text-xl;
+}
+.p_small {
+}
+a {
+}
+
+button {
+  @apply text-base lg:text-[1.375rem];
+}
+
+.bg-style {
+  @apply bg-cover bg-center bg-no-repeat;
+}
+.sb {
+  border: 1px solid red;
+}
+
+.gallery-border {
+  @apply border border-gray-200 p-5;
+}
+
+.sb {
+  @apply border border-red-500;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 1400px;
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 160px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: calc(100% - 180px);
+  }
+}
+
+.contact-bg {
+  background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772190941/arafat/bg-form_rpzr6g.png");
+}
+
+.homefooter-bg {
+  background-image: url("https://res.cloudinary.com/softenin/image/upload/v1771704747/arafat/4t4_af2rud.png");
+}
+
+.banner-bg {
+  background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772313215/arafat/hero-bgfinal_qi2v3s.png");
+}
+
+.arafat-bg {
+  background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772225871/arafat/araft-bg_vxpxor.png");
+}
+
+.blog-bg {
+  background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772264620/arafat/Bannerfdsf_ubw9fr.png");
+}
+
+.filter-hover {
+  @apply hover:text-3xl hover:font-bold;
+}
+
+.footer-button {
+  @apply px-0;
+}
+
+.gallery-hover {
+  @apply absolute left-0 top-0 z-10 hidden h-full w-full group-hover:block group-hover:bg-black/50 group-hover:text-white;
+}
+
+.model {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition:
+    0.4s ease,
+    visibilty 0.4s ease,
+    transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+@import "tailwindcss/utilities";
