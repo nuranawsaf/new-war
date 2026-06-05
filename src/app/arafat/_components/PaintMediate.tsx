@@ -3,8 +3,8 @@ import React from "react";
 
 const PaintMediate = () => {
   return (
-    <div className="container my-32">
-      <div className="grid grid-cols-3 gap-10">
+    <div className="container py-32">
+      <div className="grid lg:grid-cols-3 gap-10">
         <div className="">
           <img
             src={
@@ -14,7 +14,7 @@ const PaintMediate = () => {
             height={708}
           />
         </div>
-        <div className="col-span-2">
+        <div className="lg:col-span-2">
           <h4 className="font-cormorant mb-2">I Paint to Meditate</h4>
           <img
             src={

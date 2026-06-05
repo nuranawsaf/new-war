@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import imgData from "./imgdata";
 import Image from "next/image";
+import FooterImage from "@/components/footer-img";
 
 export default function FilterableGallery() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -152,6 +153,10 @@ export default function FilterableGallery() {
             </div>
           </div>
         )}
+      </div>
+
+      <div>
+        <FooterImage />
       </div>
     </div>
   );

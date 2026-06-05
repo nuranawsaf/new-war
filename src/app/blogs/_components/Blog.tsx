@@ -1,11 +1,12 @@
+import FooterImage from "@/components/footer-img";
 import { blogdata } from "./blog-data";
 
 const Blog = () => {
   return (
     <div>
-      <div className="lg:h-[426px] bg-style blog-bg flex items-end pb-8"></div>
+      <div className="lg:h-[426px] bg-style blog-bg flex items-end "></div>
 
-      <div className="container my-16">
+      <div className="container py-40">
         <div className="grid lg:grid-cols-3 gap-6 gap-y-20">
           {blogdata.map((item) => (
             <div key={item.id}>
@@ -20,6 +21,9 @@ const Blog = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <FooterImage />
       </div>
     </div>
   );

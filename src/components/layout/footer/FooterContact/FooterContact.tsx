@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterContact = () => {
   return (
-    <div className="w-[20.44rem]">
+    <div className="lg:w-[20.44rem]">
       <h5 className="font-cormorant text-3xl font-bold border-t border-b border-white border-opacity-10 py-6">
         Contact Us
       </h5>

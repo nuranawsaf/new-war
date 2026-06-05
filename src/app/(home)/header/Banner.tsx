@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <header className=" banner-bg bg-style h-[298px] md:h-[459px] lg:h-[974px] flex items-end justify-left relative">
+    <header className=" banner-bg bg-style   lg:h-[974px] flex items-end justify-left relative">
       <div className="container">
         <div className="grid lg:grid-cols-2 items-end min-h-[85vh] gap-10 ">
           <div className="text-center flex items-center lg:text-left pt-10 lg:pt-0 h-full ">
@@ -15,7 +15,7 @@ const Banner = () => {
                 <span className="text-[3.3rem]">The World Through My Eyes</span>
               </h1>
 
-              <p className="text-[#d4b06a] text-base lg:text-lg mt-6 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+              <p className="text-[#d4b06a] text-justify text-base lg:text-lg mt-6 max-w-2xl leading-relaxed mx-auto lg:mx-0">
                 For me, art has been a vehicle for a wonderful journey. A
                 journey that has included an attempt to master a wide range of
                 media; a journey that has challenged me to absorb and express
@@ -24,8 +24,8 @@ const Banner = () => {
 
               <div className="mt-10">
                 <a
-                  href="#"
-                  className="inline-flex items-center justify-center px-10 py-5 bg-[#d4b06a] text-black font-medium text-lg hover:scale-105 transition duration-300"
+                  href="/arafat"
+                  className="inline-flex items-center justify-center px-6 lg:px-10 py-3 lg:py-5 bg-[#d4b06a] text-black font-medium text-lg hover:scale-105 transition duration-300"
                 >
                   Read More
                 </a>

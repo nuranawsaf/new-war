@@ -1,8 +1,8 @@
 const Tutorials = () => {
   return (
-    <div className="bg-theme-black">
-      <div className="container py-20">
-        <div className="grid lg:grid-cols-2 items-center lg:gap-16 my-10">
+    <div className="bg-theme-black ">
+      <div className="container py-20 ">
+        <div className="grid lg:grid-cols-3 items-center lg:gap-16 my-10">
           <div className="flex justify-between ">
             <div>
               <h4 className="font-cormorant mb-2">Tutorials</h4>
@@ -14,14 +14,14 @@ const Tutorials = () => {
                 height={44}
               />
             </div>
-            <div>
+            <div className="pl-5 lg:pl-0">
               <img
                 src="https://res.cloudinary.com/softenin/image/upload/v1772224128/arafat/Line_b6vu0w.png"
                 alt=""
               />
             </div>
           </div>
-          <div>
+          <div className="col-span-2 pt-4 lg:pt-0">
             <p className="text-justify">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have su alteration in some form, by injected

@@ -47,7 +47,7 @@ const NavMenu = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="w-full -mt-8 flex justify-between lg:hidden py-2 bg-primary">
+        <div className="w-full -mt-8 px-4 flex justify-between lg:hidden py-2 bg-primary ">
           <div>
             <Link href={"/"}>
               <img width={150} src="/images/main-logo_ycwg7s.png" alt="" />
@@ -55,7 +55,7 @@ const NavMenu = () => {
           </div>
           <button
             onClick={() => setMobileMenu(!mobileMenu)}
-            className="lg:hidden cursor-pointer"
+            className="lg:hidden cursor-pointer "
           >
             {mobileMenu ? <X size={28} /> : <Menu size={28} />}
           </button>

@@ -6,13 +6,15 @@ const Activities = () => {
     <div className=" py-16 container">
       <div className="py-8 text-center">
         <h4 className="font-cormorant mb-2">Activities</h4>
-        <img
-          src={
-            "https://res.cloudinary.com/softenin/image/upload/v1772207060/arafat/Sep_w162ip.png"
-          }
-          width={95}
-          height={44}
-        />
+        <div className="flex  justify-center">
+          <img
+            src={
+              "https://res.cloudinary.com/softenin/image/upload/v1772207060/arafat/Sep_w162ip.png"
+            }
+            width={95}
+            height={44}
+          />
+        </div>
       </div>
 
       <div>

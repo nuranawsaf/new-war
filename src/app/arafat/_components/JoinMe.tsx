@@ -4,8 +4,8 @@ import React from "react";
 const JoinMe = () => {
   return (
     <div className="bg-theme-black py-24">
-      <div className="container grid grid-cols-3 gap-10">
-        <div className="col-span-2">
+      <div className="container grid lg:grid-cols-3 gap-10">
+        <div className="lg:col-span-2">
           <div>
             <p className="text-justify">
               I have traveled around Asia, looking, learning and creating. I

@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
 @theme {
@@ -86,12 +86,19 @@ a {
   }
 }
 
+.footerimg-bg {
+  background-image: url("https://res.cloudinary.com/softenin/image/upload/v1780661937/arafat/fter-img_ctxduf.png");
+  background-repeat: no-repeat;
+}
+
 .contact-bg {
   background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772190941/arafat/bg-form_rpzr6g.png");
+  background-repeat: no-repeat;
 }
 
 .homefooter-bg {
   background-image: url("https://res.cloudinary.com/softenin/image/upload/v1771704747/arafat/4t4_af2rud.png");
+  background-repeat: no-repeat;
 }
 
 .banner-bg {

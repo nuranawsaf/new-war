@@ -8,13 +8,15 @@ const HomeVideoOne = () => {
         <h4 className="font-cormorant mb-2">
           Watercolour Insights from Arafat
         </h4>
-        <img
-          src={
-            "https://res.cloudinary.com/softenin/image/upload/v1772207060/arafat/Sep_w162ip.png"
-          }
-          width={95}
-          height={44}
-        />
+        <div className="flex  justify-center">
+          <img
+            src={
+              "https://res.cloudinary.com/softenin/image/upload/v1772207060/arafat/Sep_w162ip.png"
+            }
+            width={95}
+            height={44}
+          />
+        </div>
       </div>
 
       <div className="container flex justify-center ">

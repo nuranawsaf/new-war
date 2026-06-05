@@ -3,7 +3,7 @@ import React from "react";
 
 const VisitChild = () => {
   return (
-    <div className="container my-20">
+    <div className="container py-20">
       <p className="text-justify mb-16">
         For me, art has been a vehicle for a wonderful journey. A journey that
         has included an attempt to master a wide range of media; a journey that
@@ -22,19 +22,19 @@ const VisitChild = () => {
         to motivate and drive me to ever expanding new horizons.
       </p>
 
-      <div className="grid grid-cols-3  ">
-        <div className="w-full">
+      <div className="grid lg:grid-cols-3  ">
+        <div className="w-full mb-6 lg:mb-0">
           <img
             src={
               "https://res.cloudinary.com/softenin/image/upload/v1772263563/arafat/Photo_abkmjo.jpg"
             }
             width={425}
             height={293}
-            className="w-full"
+            className="w-full "
           />
           <p>Watercolor Pleinair</p>
         </div>
-        <div>
+        <div className="w-full mb-6 lg:mb-0">
           <img
             src={
               "https://res.cloudinary.com/softenin/image/upload/v1772263562/arafat/Photo1_kfyicy.jpg"
@@ -44,7 +44,7 @@ const VisitChild = () => {
           />
           <p>Artist Family</p>
         </div>
-        <div>
+        <div className="w-full mb-6 lg:mb-0">
           <img
             src={
               "https://res.cloudinary.com/softenin/image/upload/v1772263562/arafat/Photo3_oewxob.jpg"

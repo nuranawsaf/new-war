@@ -13,7 +13,6 @@ export default async function Page() {
       <Artwork />
       <Tutorials />
       <Activities />
-      <HomeContactForm />
       <HomeVideoOne />
       <HomeFooterImage />
     </div>
