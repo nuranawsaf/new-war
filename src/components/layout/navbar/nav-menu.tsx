@@ -7,10 +7,14 @@ import Link from "next/link";
 const NavMenu = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
-    <nav className="w-full S lg:border-b lg:border-t lg:py-3 border-theme-gray  text-white">
+    <nav className="w-full  lg:border-b lg:border-t lg:py-3 border-theme-gray  text-white">
       <div className=" lg:px-6">
         <div className="flex items-center justify-between  container">
           <nav className=" hidden lg:flex items-center gap-10 text-base font-outfit ">
+            <a href="/arafat" className="hover:text-primary duration-300">
+              Arafat Hosen
+            </a>
+
             <a href="/artworks" className="hover:text-primary duration-300">
               Artworks
             </a>
@@ -43,7 +47,7 @@ const NavMenu = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="w-full flex justify-between lg:hidden py-2 bg-primary ">
+        <div className="w-full -mt-8 flex justify-between lg:hidden py-2 bg-primary">
           <div>
             <Link href={"/"}>
               <img width={150} src="/images/main-logo_ycwg7s.png" alt="" />
@@ -60,7 +64,11 @@ const NavMenu = () => {
         {/* Mobile Menu */}
         {mobileMenu && (
           <div className="lg:hidden bg-theme-gray backdrop-blur-md border-b border-white/10">
-            <nav className="flex flex-col py-6 space-y-5 text-start">
+            <nav className="flex flex-col px-4 py-6 space-y-5 text-start">
+              <a href="/arafat" className="hover:text-primary">
+                Arafat Hosen
+              </a>
+
               <a href="/artworks" className="hover:text-primary">
                 Artworks
               </a>

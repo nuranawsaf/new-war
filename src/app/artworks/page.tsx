@@ -1,7 +1,9 @@
+import FilterableGallery from "./_components/Gallery";
+
 export default function artworks() {
   return (
     <div>
-      <h1>Hello Next.js</h1>
+      <FilterableGallery />
     </div>
   );
 }

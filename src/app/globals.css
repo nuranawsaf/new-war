@@ -28,7 +28,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #1f2732;
   color: var(--foreground);
   font-family: var(--font-outfit);
 }
@@ -36,31 +36,26 @@ body {
 h1 {
   @apply text-[2.25rem] lg:text-[4.07rem] lg:leading-[4.625rem];
 }
-h2 {
-  @apply text-[2.25rem] leading-[114.6%] lg:text-[4.07rem];
-}
+
 h3 {
-  @apply text-[2.25rem] leading-[114.6%] lg:text-[2.81rem];
+  @apply text-[2.25rem] lg:text-[2.81rem] leading-[114.6%];
 }
 h4 {
   @apply text-[2.5rem] leading-[114.6%];
 }
 
 p {
-  @apply text-base leading-[140%] lg:text-xl;
+  @apply text-base lg:text-xl leading-[140%];
 }
 .p_small {
 }
 a {
 }
 
-button {
-  @apply text-base lg:text-[1.375rem];
+.bg-style {
+  @apply bg-cover bg-no-repeat bg-center;
 }
 
-.bg-style {
-  @apply bg-cover bg-center bg-no-repeat;
-}
 .sb {
   border: 1px solid red;
 }
@@ -101,14 +96,17 @@ button {
 
 .banner-bg {
   background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772313215/arafat/hero-bgfinal_qi2v3s.png");
+  background-repeat: no-repeat;
 }
 
 .arafat-bg {
   background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772225871/arafat/araft-bg_vxpxor.png");
+  background-repeat: no-repeat;
 }
 
 .blog-bg {
   background-image: url("https://res.cloudinary.com/softenin/image/upload/v1772264620/arafat/Bannerfdsf_ubw9fr.png");
+  background-repeat: no-repeat;
 }
 
 .filter-hover {
